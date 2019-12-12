@@ -44,6 +44,9 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import androidx.appcompat.widget.SwitchCompat;
 import android.util.Log;
 import android.view.View;
@@ -87,6 +90,8 @@ public class SpeechActivity extends Activity
   private static final long MINIMUM_TIME_BETWEEN_SAMPLES_MS = 30;
   private static final String LABEL_FILENAME = "file:///android_asset/conv_actions_labels.txt";
   private static final String MODEL_FILENAME = "file:///android_asset/conv_actions_frozen.tflite";
+  private DatabaseReference mDatabase;
+
 
   // UI elements.
   private static final int REQUEST_RECORD_AUDIO = 13;
@@ -147,6 +152,7 @@ public class SpeechActivity extends Activity
     // Set up the UI.
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_speech);
+    mDatabase = FirebaseDatabase.getInstance().getReference();
 
     // Load the labels for the model, but only display those that don't start
     // with an underscore.
@@ -452,9 +458,11 @@ public class SpeechActivity extends Activity
                     selectedTextView = noTextView;
                     break;
                   case 2:
+                    mDatabase.child("takeOff").setValue("true");
                     selectedTextView = upTextView;
                     break;
                   case 3:
+                    mDatabase.child("takeOff").setValue("false");
                     selectedTextView = downTextView;
                     break;
                   case 4:

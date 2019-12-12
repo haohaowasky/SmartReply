@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "327321787577",
+    "firebase_url": "https://aircontrol-cfc55.firebaseio.com",
+    "project_id": "aircontrol-cfc55",
+    "storage_bucket": "aircontrol-cfc55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327321787577:android:ae5213ce70005b14a10f68",
+        "android_client_info": {
+          "package_name": "com.dji.sdk.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327321787577-4b52f257vf5shkgpiqdeoh0gkqu74uls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz8-2VNktDhJZ-h9YjRI5Km8RrVW6z4BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327321787577-4b52f257vf5shkgpiqdeoh0gkqu74uls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327321787577:android:82d42f8cde96716ca10f68",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.speech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327321787577-4b52f257vf5shkgpiqdeoh0gkqu74uls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz8-2VNktDhJZ-h9YjRI5Km8RrVW6z4BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327321787577-4b52f257vf5shkgpiqdeoh0gkqu74uls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
